@@ -10,7 +10,7 @@ A website where the user can order a customizable pizza. Week 4 Independent proj
 
 ## Specifications
 
-* Program will let user click on a button to show a menu that let's them customize a pizza order.
+* Program will let user click on a button to show a menu that lets them customize a pizza order.
 * Program will show a new menu for user information to finalize order after pizza has been customized.
 * Program will show an order confirmation and order number after user has completed the order.
 
