@@ -18,36 +18,11 @@
       <!-- Div class for main page body -->
       <div class="mainpage-body">
         <button class="btn btn-primary" id="pizzaModalButton" type="button" data-toggle="modal" data-target="#pizzaOrderModal">Launch Modal</button>
-
-        <!-- Sample Modal Test -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-          Launch demo modal
-        </button>
-
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Div for order modal popup -->
       <div class="modal fade" id="pizzaOrderModal" tabindex="-1" role="dialog" aria-labelledby="pizzaOrderModal" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -55,12 +30,49 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" id="sizeMenu" class="btn btn-default">Size</button>
+              <button type="button" id="toppingMenu" class="btn btn-default">Toppings</button>
+              <button type="button" id="sidesMenu" class="btn btn-default">Sides</button>
+            </div>
+            <div class="size-page">
+              <h3>Select Pizza Size</h3>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="small">
+                  Small
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="medium" checked>
+                  Medium
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="large">
+                  Large
+                </label>
+              </div>
+            </div>
+            <div class="toppings-page">
+              <h3>Select Toppings</h3>
+              <div class="row">
+                <div class="col">
+                  <h4>Meats</h4>
+                </div>
+                <div class="col">
+                  <h4>Non-meats</h4>
+                </div>
+              </div>
+            </div>
+            <div class="sides-page">
+              <h3>Select Sides</h3>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" id="pizzaFinish" class="btn btn-primary">Finish Pizza</button>
+              <button type="submit" id="orderPizza" class="btn btn-primary">Order</button>
             </div>
           </div>
         </div>
