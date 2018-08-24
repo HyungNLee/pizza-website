@@ -2,10 +2,14 @@
   display: none;
 }
 
-#backToPizza, #orderPizza {
+#backToPizza, #orderPizza, #newPizza {
   display: none;
 }
 
 .user-input-page {
+  display: none;
+}
+
+.confirmation-page {
   display: none;
 }
