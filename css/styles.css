@@ -13,3 +13,21 @@
 .confirmation-page {
   display: none;
 }
+
+.options-page {
+  margin: 15px;
+}
+
+.btn-group {
+  align-self: center;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #e03515;
+  text-shadow: 1px 1px white;
+}
+
+.jumbotron h2 {
+  font-style: italic;
+}
