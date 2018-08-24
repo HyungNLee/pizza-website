@@ -1,3 +1,8 @@
+body {
+  height: 100%;
+  background-image: url(../img/pizzaBG.jpg);
+}
+
 .toppings-page, .sides-page {
   display: none;
 }
@@ -14,7 +19,7 @@
   display: none;
 }
 
-.options-page {
+.options-page, .user-input-page, .confirmation-page {
   margin: 15px;
 }
 
@@ -22,12 +27,32 @@
   align-self: center;
 }
 
-.jumbotron {
+.title-container {
+  background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
-  background-color: #e03515;
-  text-shadow: 1px 1px white;
+  color: white;
+  text-shadow: 1px 1px black;
+  align-self: center;
+  margin-top: 25%;
+  font-family: 'Raleway', sans-serif;
+  /* background-image: url(../img/pizzaBG.jpg); */
 }
 
-.jumbotron h2 {
+.title-container h1 {
+  font-size: 55px;
+}
+
+.title-container h2 {
+  font-size: 40px;
   font-style: italic;
+}
+
+#pizzaModalButton {
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mainpage-body {
+  margin-top: 30px;
 }
