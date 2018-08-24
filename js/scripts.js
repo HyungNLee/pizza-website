@@ -38,5 +38,26 @@ $(document).ready(function() {
     $(".sides-page").show();
     $(".size-page").hide();
   })
+  //Click function to finalize pizza
+  $("#pizzaFinish").click(function(){
+    $(".options-page").hide();
+    $(".user-input-page").show();
+    $("#pizzaFinish").hide();
+    $("#backToPizza").show();
+    $("#orderPizza").show();
+    $(".btn-group").hide();
+  })
+  //Click function to go back to pizza
+  $("#backToPizza").click(function(){
+    $(".options-page").show();
+    $(".user-input-page").hide();
+    $("#pizzaFinish").show();
+    $("#backToPizza").hide();
+    $("#orderPizza").hide();
+    $(".btn-group").show();
+  })
 
+  $("#orderPizza").click(function(){
+    
+  })
 })

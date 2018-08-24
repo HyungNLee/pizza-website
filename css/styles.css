@@ -1,3 +1,11 @@
 .toppings-page, .sides-page {
   display: none;
 }
+
+#backToPizza, #orderPizza {
+  display: none;
+}
+
+.user-input-page {
+  display: none;
+}
