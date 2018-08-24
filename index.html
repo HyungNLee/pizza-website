@@ -25,50 +25,65 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title">Customize Your Pizza!</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="btn-group" role="group" aria-label="...">
-              <button type="button" id="sizeMenu" class="btn btn-default">Size</button>
-              <button type="button" id="toppingMenu" class="btn btn-default">Toppings</button>
-              <button type="button" id="sidesMenu" class="btn btn-default">Sides</button>
+              <button type="button" id="sizeMenuButton" class="btn btn-default">Size</button>
+              <button type="button" id="toppingMenuButton" class="btn btn-default">Toppings</button>
+              <button type="button" id="sidesMenuButton" class="btn btn-default">Sides</button>
             </div>
-            <div class="size-page">
-              <h3>Select Pizza Size</h3>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="small">
-                  Small
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="medium" checked>
-                  Medium
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="large">
-                  Large
-                </label>
-              </div>
-            </div>
-            <div class="toppings-page">
-              <h3>Select Toppings</h3>
-              <div class="row">
-                <div class="col">
-                  <h4>Meats</h4>
+            <div class="options-page">
+              <div class="size-page">
+                <h3>Select Pizza Size</h3>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value="small">
+                    Small
+                  </label>
                 </div>
-                <div class="col">
-                  <h4>Non-meats</h4>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value="medium" checked>
+                    Medium
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value="large">
+                    Large
+                  </label>
                 </div>
               </div>
-            </div>
-            <div class="sides-page">
-              <h3>Select Sides</h3>
+              <div class="toppings-page">
+                <h3>Select Toppings</h3>
+                <div class="row">
+                  <div class="col">
+                    <h4>Meats</h4>
+                    <input type="checkbox" name="meats" value="pepperoni"> Pepperoni<br>
+                    <input type="checkbox" name="meats" value="italianSausage"> Italian Sausage<br>
+                    <input type="checkbox" name="meats" value="ham"> Ham<br>
+                    <input type="checkbox" name="meats" value="bacon"> Bacon<br>
+                    <input type="checkbox" name="meats" value="chicken"> Chicken<br>
+                  </div>
+                  <div class="col">
+                    <h4>Non-meats</h4>
+                    <input type="checkbox" name="nonmeats" value="olive"> Olives<br>
+                    <input type="checkbox" name="nonmeats" value="onion"> Onions<br>
+                    <input type="checkbox" name="nonmeats" value="mushroom"> Mushrooms<br>
+                    <input type="checkbox" name="nonmeats" value="tomato"> Tomatoes<br>
+                    <input type="checkbox" name="nonmeats" value="spinach"> Spinach<br>
+                  </div>
+                </div>
+              </div>
+              <div class="sides-page">
+                <h4>Select Sides</h4>
+                <input type="checkbox" name="sides" value="breadSticks"> Bread Sticks<br>
+                <input type="checkbox" name="sides" value="onionRings"> Onion Rings<br>
+                <input type="checkbox" name="sides" value="mozzarellaSticks"> Mozzarella Sticks<br>
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" id="pizzaFinish" class="btn btn-primary">Finish Pizza</button>
