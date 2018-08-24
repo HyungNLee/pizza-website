@@ -56,3 +56,7 @@ body {
 .mainpage-body {
   margin-top: 30px;
 }
+
+.options-page h3 {
+  text-decoration: underline;
+}
